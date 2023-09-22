@@ -1,0 +1,62 @@
+*, *::after , *::before{
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', sans-serif;
+        font-weight: normal;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #800080, #7c7c7c);
+}
+
+
+.calcu{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+.calcu button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(255, 255, 255, .75);
+}
+
+.calcu button:hover{
+    background-color: rgb(255, 255, 255, .9);
+}
+
+.span-dos{
+    grid-column: span 2;
+}
+
+.pantalla {
+    grid-column: span 4;
+    background-color: rgb(0, 65, 43);
+    display: flex;
+    align-items:end ;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+}
+  
+
+.pantalla .numeroAnterior{
+color: rgb(255, 255, 255, .75);
+font-size: 1.5rem;
+}
+
+.pantalla .numeroActual{
+    color: white;
+    font-size: 2.5rem;
+}
