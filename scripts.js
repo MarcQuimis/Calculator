@@ -12,7 +12,8 @@
 
         function actualizarPantalla() {
             pantallaNumActual.textContent = numActual;
-            pantallaNumAnterior.textContent = numAnterior + (operacion ? operacion : '');
+            pantallaNumAnterior.textContent = numAnterior + (operacion ? operacion : ''); 
+            
         }
 
         numeroB.forEach(button => {
